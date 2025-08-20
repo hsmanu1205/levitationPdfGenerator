@@ -1,146 +1,134 @@
-# ✨ Levitation PDF Generator  
+# 🌌 Levitation PDF Generator  
 
-🚀 A **full-stack PDF Generator** built with modern technologies.  
-This project allows you to generate PDFs dynamically with a sleek UI and a robust backend.  
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <a href="https://levitation-invoice-generator.netlify.app/">
+    <img src="https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  <b>✨ A modern full-stack app to generate and download invoices in beautiful PDF format ✨</b>
+</p>
+
+---
+
+## 🌐 Live Demo  
+👉 **[Levitation PDF Generator](https://levitation-invoice-generator.netlify.app/)**  
+
+---
+
+## 🚀 Features  
+✅ **Frontend**: React + Vite with modular components  
+✅ **Backend**: Node.js + Express for PDF generation  
+✅ **UI**: Responsive & clean interface  
+✅ **PDF Export**: Generate invoices in real-time  
+✅ **Type Safety** with TypeScript  
+✅ **Deployed** on Netlify  
 
 ---
 
 ## 📂 Project Structure  
-
-```
-
-levitation/
-│── client/             # 🎨 Frontend (React + Vite + TypeScript)
-│   ├── components/     # Reusable UI components
-│   ├── hooks/          # Custom React hooks
-│   ├── lib/            # Utility functions
-│   ├── pages/          # App pages
-│   ├── services/       # API calls
-│   ├── store/          # Global state management
-│   ├── App.tsx         # Main app component
-│   ├── main.tsx        # Entry point
-│   └── global.css      # Styles
+```bash
+levitationPdfGenerator/
+│── client/         # Frontend (React + Vite)
+│   ├── components/ # UI Components
+│   ├── hooks/      
+│   ├── lib/        
+│   ├── pages/      
+│   ├── services/   
+│   ├── store/      
+│   └── public/     
 │
-│── public/             # 🌍 Static assets (SVGs, icons, robots.txt)
+│── server/         # Backend (Node.js + Express)
+│   ├── models/     
+│   ├── routes/     
+│   └── node-build.ts
 │
-│── server/             # ⚡ Backend (Node.js + TypeScript + Express)
-│   ├── models/         # Data models
-│   ├── routes/         # API routes
-│   ├── index.ts        # Server entry point
-│   └── node-build.ts   # Build scripts
-│
-│── shared/             # 🔗 Shared code between client & server
-│   └── api.ts
-│
-│── .env                # Environment variables
-│── .gitignore          # Ignored files
-│── package.json        # Dependencies
-│── pnpm-lock.yaml      # Lock file
-
+│── shared/         # Shared utilities (api.ts etc.)
+│── .env            # Environment variables
+│── .gitignore      
 ````
 
 ---
 
-## ⚡ Tech Stack  
+## ⚙️ Tech Stack
 
-### 🎨 Frontend  
-- ⚛️ **React (TypeScript + Vite)**  
-- 🎨 **TailwindCSS** (for styling)  
-- 📦 **Shadcn/UI Components**  
-
-### ⚡ Backend  
-- 🟢 **Node.js + Express**  
-- 🔒 **JWT Authentication**  
-- 📄 **PDF Generation Tools**  
-
-### 🔗 Shared  
-- ⚡ TypeScript-powered shared utilities  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,vite,ts,nodejs,express,netlify,git,github" />
+</p>
 
 ---
 
-## 🚀 Getting Started  
+## 🛠️ Getting Started
 
-### 1️⃣ Clone the Repository  
+### 1️⃣ Clone Repository
+
 ```bash
 git clone https://github.com/hsmanu1205/levitationPdfGenerator.git
 cd levitationPdfGenerator
-````
+```
 
 ### 2️⃣ Install Dependencies
 
-Using **pnpm** (recommended):
-
 ```bash
-pnpm install
-```
-
-### 3️⃣ Setup Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-PORT=5000
-NODE_ENV=development
-```
-
-### 4️⃣ Run the Project
-
-#### ▶️ Start Frontend
-
-```bash
+# For client
 cd client
-pnpm dev
+npm install
+
+# For server
+cd ../server
+npm install
 ```
 
-#### ⚡ Start Backend
+### 3️⃣ Run Development
 
 ```bash
-cd server
-pnpm dev
+# Start client (React + Vite)
+cd client
+npm run dev
+
+# Start server (Node.js + Express)
+cd ../server
+npm run dev
 ```
 
----
+### 4️⃣ Build for Production
 
-## 📜 Scripts
-
-| Command      | Description              |
-| ------------ | ------------------------ |
-| `pnpm dev`   | Run development server   |
-| `pnpm build` | Build production bundles |
-| `pnpm start` | Start production server  |
-
----
-
-## 🌟 Features
-
-✅ Generate PDFs dynamically
-✅ Full-stack architecture (React + Node.js)
-✅ TypeScript everywhere
-✅ TailwindCSS + Shadcn UI for modern UI
-✅ Easy deployment ready
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! 🎉
-Feel free to **fork** this repo and submit a **pull request**.
-
----
-
-## 📄 License
-
-📝 MIT License
-
----
-
-Made with ❤️ by [Harshit Singh](https://github.com/hsmanu1205)
-
+```bash
+# Build frontend
+cd client
+npm run build
 ```
+## 👨‍💻 Author
+
+<p align="center">
+  <b>Harshit Singh</b>  
+</p>  
+
+<p align="center">
+  <a href="https://github.com/hsmanu1205">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
 
 ---
 
-👉 This will give your GitHub project a **professional look with emojis and a clear structure**.  
+## ⭐ Contribute
 
-Would you like me to also create a **GitHub Actions workflow (CI/CD)** file for auto-building & testing when you push changes? That’ll make your repo look even more polished.
+Contributions are welcome! Fork this repo and submit a PR.
+
+---
+
+## 📜 License
+
+📝 Licensed under the **MIT License**.
+
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake animation" />
+</p>
 ```
